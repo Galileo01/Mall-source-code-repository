@@ -1,0 +1,14 @@
+result=res.data.result
+//detail 详情页
+1.轮播展示图片 ：result.itemInfo.topImages
+2.商品信息    goodsInfo = new GoodsInfo(
+        result.itemInfo,
+        result.columns,
+        result.shopInfo.services
+      );
+
+3.店铺信息 ：result.shopInfo;
+4.效果展示 图片  ;this.detailInfo = result.detailInfo;
+5. 
+
+6。评论 result.rate.list[0]
