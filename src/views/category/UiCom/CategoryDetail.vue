@@ -47,6 +47,13 @@ export default {
   components: {
     "goods-list": Goodslist,
     "goods-list-item": Goodslistitem
+  },
+  created(){
+    // this.$watch('CategoryDetail',(newVal,oldVal)=>{
+    //   console.log('new',newVal);
+    //   console.log('\nold',oldVal);
+      
+    // })
   }
 };
 </script>

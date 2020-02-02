@@ -8,7 +8,7 @@ const baseURL2='http://106.54.54.237:8000/api/hy';
 
     //1.创建 实例, 在实例上 配置 默认的请求 配置选项
     const instance =axios.create({
-        baseURL:baseURL1,
+        baseURL:baseURL2,
         timeout:5000
     });
 

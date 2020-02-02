@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/"></router-link>
-      <router-link to="/about"></router-link>
+      
     </div>
-    <keep-alive exclude="Detail"><router-view></router-view></keep-alive>
+    <keep-alive exclude="Detail,Login"><router-view></router-view></keep-alive>
+    <!-- 逗号 分隔排除的 组件名称-->
     <main-tabbar></main-tabbar>
   </div>
 </template>

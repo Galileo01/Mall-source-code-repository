@@ -15,6 +15,14 @@ Vue.use(VueLazyLoad,{
   loading:require('./assets/img/common/placeholder.png')
 })
 
+//定义v-focus 的全局指令，自动聚焦  input 元素
+Vue.directive('focus', {
+  // 当绑定元素插入到 DOM 中。
+  inserted: function (el) {
+      // 聚焦元素
+      el.focus()
+  }
+})
 new Vue({
   router,
   store,

@@ -1,11 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+
+//动态加载 组件
 const Home = () => import('views/home/Home')
 const Category = () => import('views/category/Category')
 const Cart = () => import('views/cart/Cart')
 const Profile = () => import('views/profile/Profile')
 const Detail = () => import('views/detail/Detail')
+const Login= ()=>import ('views/login/Login') 
+
 
 // 1.安装VueRouter
 Vue.use(VueRouter)
@@ -35,6 +39,10 @@ const routes = [
   {
     path: '/detail/:iid',
     component: Detail
+  },
+  {
+    path:'/login',
+    component: Login
   }
 ]
 

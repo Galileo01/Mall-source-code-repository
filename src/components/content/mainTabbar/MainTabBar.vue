@@ -1,5 +1,6 @@
 <template>
-  <tab-bar>
+<div v-show="isShow">
+  <tab-bar >
     <tab-bar-item link="/home">
       <img slot="icon" src="~assets/img/tabbar/home.svg" alt="">
       <img slot="active-icon" src="~assets/img/tabbar/home_active.svg" alt="">
@@ -21,6 +22,7 @@
       <div slot="text">我的</div>
     </tab-bar-item>
   </tab-bar>
+</div>
 </template>
 
   <script>
@@ -29,9 +31,19 @@
 
     export default {
       name: "MainTabBar",
+      data(){
+        return {
+         
+        }
+      },
+      computed:{
+        isShow(){//通过计算属性， 依赖的 vuex 状态 改变就会改变
+           return this.$store.state.isShowMainTabBar;
+        }
+      },
       components: {
         TabBar, TabBarItem
-      }
+      },
     }
   </script>
 
