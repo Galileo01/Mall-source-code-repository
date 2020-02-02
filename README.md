@@ -1,7 +1,9 @@
 # mall-v1.3.0
 
 ## 项目介绍
-version-1.3.0
+version-1.3.0  
+[效果展示点击直接进入码云展示仓库](http://ego-git.gitee.io/mall__display_warehouse)  
+chrome 请在 移动端模式下 访问
 
 1. 参照 [B站视频](https://www.bilibili.com/video/av59594689)   
 1.2.5版本  完成首页，详情页，购物车，个人页面   的编写
@@ -71,6 +73,4 @@ baseUrl:
 |:---|:---:|---:|
 |用户信息|http://api.colinx.one:8888/test/loginCheck/|username,passwd|
 
-请chrome移动端模式下 [查看演示]()
-
-目录结构 [见](./src/tree.txt)
+### 目录结构 [见](./src/tree.txt)
